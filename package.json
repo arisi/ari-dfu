@@ -1,7 +1,7 @@
 {
-  "name": "cordova-plugin-chrome-apps-usb",
+  "name": "cordova-plugin-ari-dfu",
   "version": "1.2.1-dev",
-  "description": "This plugin provides USB connectivity for Android.",
+  "description": "This plugin provides dfu for android",
   "cordova": {
     "id": "cordova-plugin-ari-dfu",
     "platforms": [
