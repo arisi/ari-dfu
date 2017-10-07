@@ -122,7 +122,7 @@ exports.controlTransfer = function(handle, transferInfo, callback) {
         callback({resultCode: 0, data:data});
       },
       function(msg) {  // errorCallback
-        callbackWithError('DANG ! Control transfer failed: ' + msg, callback, {resultCode: 1});
+        callbackWithError('DANG !!!! Control transfer failed: '+ JSON.stringify(params)+' ' + msg, callback, {resultCode: 1});
       },
       'ChromeUsb',
       'controlTransfer',
