@@ -34,6 +34,8 @@ import android.hardware.usb.UsbRequest;
 import android.os.Build;
 import android.util.Base64;
 import android.util.Log;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class ChromeUsb extends CordovaPlugin {
