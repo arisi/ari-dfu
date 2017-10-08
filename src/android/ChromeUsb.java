@@ -37,7 +37,6 @@ import android.util.Log;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
-import android.app.Activity;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class ChromeUsb extends CordovaPlugin {
@@ -174,7 +173,7 @@ public class ChromeUsb extends CordovaPlugin {
                         } catch (Exception e) {
                             callbackContext.error("crap "+e.getMessage());
                             
-                            AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
+                            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
                             alertDialog.setTitle("Alert");
                             alertDialog.setMessage("Alert message to be shown");
                             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
