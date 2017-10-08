@@ -171,19 +171,7 @@ public class ChromeUsb extends CordovaPlugin {
                         try {
                             controlTransfer(finalArgs, params, callbackContext);
                         } catch (Exception e) {
-                            callbackContext.error("crap "+e.getMessage());
-                            
-                            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-                            alertDialog.setTitle("Alert");
-                            alertDialog.setMessage("Alert message to be shown");
-                            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        dialog.dismiss();
-                                    }
-                                });
-                            alertDialog.show();
-                            
+                            callbackContext.error("crap "+e.getMessage());                            
                         }
                     }
                 });
