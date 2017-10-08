@@ -168,7 +168,7 @@ public class ChromeUsb extends CordovaPlugin {
                         try {
                             controlTransfer(finalArgs, params, callbackContext);
                         } catch (Exception e) {
-                            callbackContext.error(e.getMessage());
+                            callbackContext.error("crap "+e.getMessage());
                         }
                     }
                 });
