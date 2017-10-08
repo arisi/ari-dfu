@@ -37,6 +37,8 @@ import android.util.Log;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
+import android.app.Activity;
+
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class ChromeUsb extends CordovaPlugin {
     private static final String TAG = "ChromeUsb";
